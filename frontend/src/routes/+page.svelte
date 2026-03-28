@@ -421,7 +421,7 @@
 				<button
 					type="button"
 					onclick={toggleLeftSidebar}
-					class="pointer-events-auto inline-flex h-9 w-9 items-center justify-center rounded-full border border-border bg-background text-sm"
+					class="pointer-events-auto inline-flex h-9 w-9 items-center justify-center rounded-md border border-border bg-background text-sm"
 					aria-label={leftSidebarCollapsed ? 'Show left sidebar' : 'Hide left sidebar'}
 					title={leftSidebarCollapsed ? 'Show chats' : 'Hide chats'}
 				>
@@ -436,7 +436,7 @@
 				<button
 					type="button"
 					onclick={toggleRightSidebar}
-					class="pointer-events-auto inline-flex h-9 w-9 items-center justify-center rounded-full border border-border bg-background text-sm"
+					class="pointer-events-auto inline-flex h-9 w-9 items-center justify-center rounded-md border border-border bg-background text-sm"
 					aria-label={rightSidebarCollapsed ? 'Show right sidebar' : 'Hide right sidebar'}
 					title={rightSidebarCollapsed ? 'Show workspace' : 'Hide workspace'}
 				>

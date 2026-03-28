@@ -60,7 +60,7 @@
 <aside class="flex h-full w-[260px] shrink-0 flex-col bg-card dark:text-[#E3E3E3]">
 	<div class="px-3 py-4">
 		<div class="mb-2 flex items-center justify-between">
-			<Button className="h-8 w-8 rounded-full" variant="outline" size="icon">
+			<Button className="h-8 w-8 rounded" variant="outline" size="icon">
 				<Settings size={16} />
 				<span class="sr-only">Settings</span>
 			</Button>
@@ -113,6 +113,7 @@
 								<div class="group flex items-center gap-1">
 									<Button
 										variant={activeChatId === chat.id ? 'outline' : 'ghost'}
+										size="sm"
 										className="min-w-0 flex-1 justify-start truncate gap-1"
 										on:click={() => onSelectChat(chat.id)}
 									>
@@ -164,13 +165,4 @@
 			</div>
 		{/if}
 	</ScrollArea>
-
-	<Separator />
-
-	<div class="flex gap-2 p-3">
-		<div class="text-xs tracking-wide text-gray-500"><Lightbulb size={14} /></div>
-		<div class="bg-card text-xs">
-			Echo uses caching to save energy. Try asking the same question twice and see the difference!
-		</div>
-	</div>
 </aside>

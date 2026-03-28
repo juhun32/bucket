@@ -76,61 +76,6 @@
 </script>
 
 <aside class="flex h-full w-[85vw] shrink-0 flex-col border-l border-white/5 bg-card lg:w-[360px]">
-	<div class="border-b p-4 dark:border-white/5">
-		<div class="mb-2 flex items-center justify-between">
-			<div>
-				<h2 class="flex items-center gap-2 text-xs dark:text-gray-300">
-					<Leaf size={12} />
-					Environmental Savings
-				</h2>
-			</div>
-			<button
-				onclick={() => fetchCacheStats()}
-				class="rounded-full p-2 transition-colors hover:bg-white/5"
-				title="Refresh Cache Stats"
-			>
-				<RefreshCw size={14} class={loading ? 'animate-spin text-blue-400' : 'text-gray-500'} />
-			</button>
-		</div>
-
-		<div class="grid grid-cols-2 gap-2 text-[11px]">
-			<div class="rounded-md border p-2 dark:border-white/8">
-				<div class="text-gray-500">CO₂ Saved</div>
-				<div class="text-emerald-400">{metrics.co2SavedG.toFixed(2)} g</div>
-			</div>
-			<div class="rounded-md border p-2 dark:border-white/8">
-				<div class="text-gray-500">Energy Saved</div>
-				<div class="text-emerald-400">{metrics.energySavedWh.toFixed(3)} Wh</div>
-			</div>
-			<div class="rounded-md border p-2 dark:border-white/8">
-				<div class="text-gray-500">Cache Hits</div>
-				<div class="dark:text-gray-200">{metrics.cacheHits}</div>
-			</div>
-			<div class="rounded-md border p-2 dark:border-white/8">
-				<div class="text-gray-500">Tokens Saved</div>
-				<div class="dark:text-gray-200">{metrics.estimatedTokensSaved}</div>
-			</div>
-		</div>
-
-		<div class="mt-2 flex items-center justify-between text-[10px] text-gray-500">
-			<div class="flex items-center gap-1">
-				<Cloud size={12} />
-				<span>{uploading ? 'Uploading to S3...' : 'S3 idle'}</span>
-			</div>
-			<div>Last up: {lastUploadAt}</div>
-			<div class="text-[10px] text-gray-600">Last pull: {lastDownloadAt}</div>
-		</div>
-
-		<div class="mt-2 text-[10px] text-gray-500">
-			<ul class="list-disc pl-4 text-[10px]">
-				<li><strong>Tokens saved:</strong> {metrics.estimatedTokensSaved}</li>
-				<li><strong>Energy saved (kWh):</strong> {(metrics.energySavedWh / 1000).toFixed(6)}</li>
-				<li><strong>CO₂ saved (g):</strong> {metrics.co2SavedG.toFixed(2)}</li>
-				<li><strong>Default kWh / 1k tokens:</strong> {constants.defaultKWhPer1KTokens}</li>
-			</ul>
-		</div>
-	</div>
-
 	<div class="min-h-0 flex-1 border-b dark:border-white/5">
 		<div class="px-4 pt-3 pb-2 text-xs text-gray-400">Cache Saved</div>
 		<div class="h-[calc(100%-34px)] space-y-2 overflow-y-auto px-3 pb-3">

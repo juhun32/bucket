@@ -118,9 +118,6 @@
 				class="mx-auto flex h-full max-w-3xl flex-col items-center justify-center rounded-xl p-6 text-sm text-muted-foreground"
 			>
 				<p class="rounded-full px-3 py-1 text-xl">Where should we start?</p>
-				<p>This is Echo, more energy efficient way to use Gemini web app.</p>
-				<p>It uses caching to reduce API calls and carbon footprint.</p>
-				<p class="pt-8">Try: "How do I center a div?"</p>
 			</div>
 		{:else}
 			<div class="mx-auto w-full max-w-3xl space-y-6 pb-20">
