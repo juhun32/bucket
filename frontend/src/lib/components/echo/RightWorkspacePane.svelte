@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Cloud, Database, Leaf, RefreshCw } from '@lucide/svelte';
-	import type { CacheEntry, CacheStatsResponse, CacheUse } from '$lib/lib/cache';
-	import { BACKEND_URL } from '$lib/lib/constants';
+	import type { CacheEntry, CacheStatsResponse, CacheUse } from '$lib/cache';
+	import { BACKEND_URL } from '$lib/constants';
 
 	let localRamCache = $state<CacheEntry[]>([]);
 	let s3CacheUsed = $state<CacheUse[]>([]);

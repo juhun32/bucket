@@ -6,7 +6,6 @@
 	import {
 		Ellipsis,
 		FolderPlus,
-		Lightbulb,
 		Moon,
 		Pencil,
 		Pin,

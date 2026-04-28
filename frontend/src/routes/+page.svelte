@@ -10,12 +10,12 @@
 	import Separator from '$lib/components/ui/Separator.svelte';
 
 	// lib
-	import type { Message, ChatApiResponse, FeatureExtractor, ChatSession } from '$lib/lib/chat';
-	import { MODEL_NAME } from '$lib/lib/chat';
-	import { BACKEND_URL } from '$lib/lib/constants';
+	import type { Message, ChatApiResponse, FeatureExtractor, ChatSession } from '$lib/chat';
+	import { MODEL_NAME } from '$lib/chat';
+	import { BACKEND_URL } from '$lib/constants';
 
 	// demo import
-	import { chatSessions as importedChatSessions } from '$lib/lib/demo';
+	import { chatSessions as importedChatSessions } from '$lib/demo';
 
 	let input = $state('');
 	let loading = $state(false);
